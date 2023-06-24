@@ -1,0 +1,15 @@
+#logo-top{
+    height: 8vh;
+    width: 8vw;
+}
+#search-bar{
+    width: 400px;
+    background: rgba(221,221,221,.12);
+    color: #fff;
+    border-radius: 6px!important;
+    padding: 6px 35px 6px 15px;
+    border: none;
+    font-size: .9rem;
+    height: 40px;
+    transition: all .18s ease;
+}
