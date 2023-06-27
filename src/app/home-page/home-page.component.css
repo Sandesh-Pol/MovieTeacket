@@ -1,9 +1,11 @@
 #logo-top{
     height: 8vh;
     width: 8vw;
+    
 }
-#search-bar{
-    width: 400px;
+#search-bar {
+    width: 55vw;
+    margin-left: -6vw;
     background: rgba(221,221,221,.12);
     color: #fff;
     border-radius: 6px!important;
@@ -12,4 +14,11 @@
     font-size: .9rem;
     height: 40px;
     transition: all .18s ease;
+}
+#Dropdown{
+    margin-right: -11px;
+    margin-left: 45px;
+    width: 18vw;
+    height: 40px;
+    background-color: #383C3F;
 }
