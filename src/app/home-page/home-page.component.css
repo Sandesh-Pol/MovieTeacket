@@ -33,6 +33,10 @@
 .menu a:hover{
     color: rgb(214, 214, 18);
 }
+.sl{
+    margin-top: 100px;
+}
+
 
 @media screen and (max-width: 800px) {
     .menu{
