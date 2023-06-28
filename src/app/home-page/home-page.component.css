@@ -1,7 +1,11 @@
 #logo-top{
     height: 50px;
-    width: 100px;
-    
+    width: 80px;
+    margin-top: 5px;
+}
+
+.nev-color {
+    background-color: rgb(27,27,27);
 }
 #search-bar {
     width: 55vw;
@@ -36,7 +40,11 @@
 .sl{
     margin-top: 100px;
 }
-
+.blank{
+    height: 100px;
+    width: 100%;
+    background-color: black;
+}
 
 @media screen and (max-width: 800px) {
     .menu{

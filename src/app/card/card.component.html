@@ -1,0 +1,15 @@
+<main>
+    <ng-container *ngFor="let item of movie">
+        <div class="card text-bg-dark">
+            <img [src]="item.src" class="card-img-top" alt="...">
+            <div class="card-img-overlay">
+                <h5 class="card-title">{{item.movieName}}</h5>
+                <p class="card-text">{{item.type}}</p>
+                <div class="book">
+                    <a class="btn btn-light b1" href="">BOOK TICKETS</a>
+                    <a class="btn btn-light b1" href="">PLAY TRAILER</a>
+                </div>
+            </div>
+        </div>
+    </ng-container>
+</main>
