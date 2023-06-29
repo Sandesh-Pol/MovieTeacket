@@ -91,6 +91,29 @@
   </div>
 </div>
 <div class="blank">
-
+  <mat-form-field class="dropdown">
+    <mat-label>Favorite food</mat-label>
+    <mat-select [(ngModel)]="selectedValue" name="food">
+      <mat-option *ngFor="let food of foods" [value]="food.value">
+        {{food.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field class="dropdown">
+    <mat-label>Favorite food</mat-label>
+    <mat-select [(ngModel)]="selectedValue" name="food">
+      <mat-option *ngFor="let food of foods" [value]="food.value">
+        {{food.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field  class="dropdown ">
+    <mat-label  >Favorite food</mat-label>
+    <mat-select  [(ngModel)]="selectedValue" name="food">
+      <mat-option  *ngFor="let food of foods" [value]="food.value">
+        {{food.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
 </div>
 <app-card></app-card>

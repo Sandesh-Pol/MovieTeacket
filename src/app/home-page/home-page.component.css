@@ -44,8 +44,16 @@
     height: 100px;
     width: 100%;
     background-color: black;
+    display: flex;
+    column-gap: 20px;
+    justify-content: end;
 }
-
+.dropdown{
+    padding: 15px;
+}
+ {
+    background-color: #000;
+}
 @media screen and (max-width: 800px) {
     .menu{
         display: none;
