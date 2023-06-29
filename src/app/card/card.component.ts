@@ -23,10 +23,10 @@ export class CardComponent {
 
     { src: 'assets/img2.jpg', movieName: 'Carry on Jatta 3', type: 'PUNJABI | (U/A) | DRAMA' },
 
-    { src: 'assets/img3.jpg', movieName: 'INDIANA JONES AND THE DIAL OF DESTINY', type: 'ENGLISH | HINDI | (U/A) | ACTION' },
+    { src: 'assets/img3.jpg', movieName: 'INDIANA JONES PART 4', type: 'ENGLISH | HINDI | (U/A) | ACTION' },
 
 
-    { src: 'assets/img4.jpg', movieName: 'ADIPURUSH ', type: 'HINDI | (U) | ROMANCE' },
+    { src: 'assets/img4.jpg', movieName: 'ADIPURUSH ', type: 'HINDI | (U) | ACTION' },
 
     {
       src: 'assets/img5.jpg', movieName: 'ZARA HATKE ZARA BACHKE', type: 'HINDI | (U/A) | ROMANCE'
@@ -35,7 +35,7 @@ export class CardComponent {
     { src: 'assets/img6.jpg', movieName: 'THE FLASH', type: 'ENGLISH | HINDI | (U/A) | ACTION' },
 
     {
-      src: 'assets/img7.jpg', movieName: '1920 HORRORS OF THE HEART', type: 'HINDI | (A) | HORROR'
+      src: 'assets/img7.jpg', movieName: '1920 HORRORS', type: 'HINDI | (A) | HORROR'
     },
 
     { src: 'assets/img8.jpg', movieName: 'ELEMENTAL', type: 'ENGLISH | HINDI | (U/A) | ANIMATION' },
