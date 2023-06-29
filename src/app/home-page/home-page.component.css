@@ -51,9 +51,6 @@
 .dropdown{
     padding: 15px;
 }
- {
-    background-color: #000;
-}
 @media screen and (max-width: 800px) {
     .menu{
         display: none;
