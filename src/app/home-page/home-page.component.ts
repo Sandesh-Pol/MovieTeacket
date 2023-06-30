@@ -1,5 +1,13 @@
 import { Component } from '@angular/core';
-interface Food {
+interface Genre {
+  value: string;
+  viewValue: string;
+}
+interface Format{
+  value: string;
+  viewValue: string;
+}
+interface Language{
   value: string;
   viewValue: string;
 }
@@ -9,12 +17,30 @@ interface Food {
   styleUrls: ['./home-page.component.css']
 })
 export class HomePageComponent {
-  selectedValue: any;
-  selectedCar: any;
-
-  foods: Food[] = [
-    {value: 'steak-0', viewValue: 'Steak'},
-    {value: 'pizza-1', viewValue: 'Pizza'},
-    {value: 'tacos-2', viewValue: 'Tacos'},
+  selectedLanguage : any;
+  selectedFormat : any;
+  selectedGenre : any;
+  genres: Genre[] = [
+    {value: 'all-0', viewValue: 'ALL GENRES'},
+    {value: 'action-1', viewValue: 'ACTION'},
+    {value: 'animation-2', viewValue: 'ANIMATION'},
+    {value: 'comedy-3', viewValue: 'COMEDY'},
+    {value: 'drama-4', viewValue: 'DRAMA'},
+    {value: 'horror-5', viewValue: 'HORROR'},
+    {value: 'romance-6', viewValue: 'ROMANCE'},
+  ];
+  formats: Format[] = [
+    {value: 'all-0', viewValue: 'ALL FORMATS'},
+    {value: 'imax-1', viewValue: 'IMAX'},
+    {value: '2d-2', viewValue: '2D'},
+    {value: '3d-3', viewValue: '3D'},
+  ];
+  languages: Language[] = [
+    {value: 'all-0', viewValue: 'ALL LANGUAGE'},
+    {value: 'english-1', viewValue: 'ENGLISH'},
+    {value: 'hindi-2', viewValue: 'HINDI'},
+    {value: 'japanse-3', viewValue: 'JAPANESE'},
+    {value: 'panjabi-4', viewValue: 'PANJABI'},
+    {value: 'telugu-5', viewValue: 'TELUGU'},
   ];
 }
