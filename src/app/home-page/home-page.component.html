@@ -91,6 +91,29 @@
   </div>
 </div>
 <div class="blank">
-
+  <mat-form-field class="dropdown">
+    <mat-label>GENRE</mat-label>
+    <mat-select [(ngModel)]="selectedGenre" name="genre">
+      <mat-option *ngFor="let genre of genres" [value]="genre.value">
+        {{genre.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field class="dropdown">
+    <mat-label >FORMATE</mat-label>
+    <mat-select [(ngModel)]="selectedFormat" name="food">
+      <mat-option *ngFor="let format of formats" [value]="format.value">
+        {{format.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field  class="dropdown ">
+    <mat-label >LANGUAGES</mat-label>
+    <mat-select  [(ngModel)]="selectedLanguage" name="food">
+      <mat-option *ngFor="let language of languages" [value]="language.value">
+        {{language.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
 </div>
 <app-card></app-card>
