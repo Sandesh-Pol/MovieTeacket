@@ -40,16 +40,49 @@
 .sl{
     margin-top: 100px;
 }
-.blank{
+.part-1{
     height: 100px;
     width: 100%;
     background-color: black;
     display: flex;
-    column-gap: 20px;
+    column-gap: 0px;
     justify-content: end;
 }
-.dropdown{
+.dp{
+    display: flex;
+    column-gap: 50px;
+}
+.dropdown1{
     padding: 15px;
+    margin-left: -120px;
+    border-bottom: none;
+} 
+::ng-deep .mdc-text-field--filled:not(.mdc-text-field--disabled){
+    background-color: black;
+    width: 70%;
+
+}
+
+.hh5{
+    display: flex;
+    justify-content: flex-start;
+    background-color: black;
+}
+.hh5 h1{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 40px 0 0 -60vw;
+}
+.part-2{
+    background-color: #000;
+    padding-left: 40px;
+    margin-bottom: -16px;
+}
+.part-2 h1{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
 }
 @media screen and (max-width: 800px) {
     .menu{

@@ -8,11 +8,13 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { CardComponent } from './card/card.component';
 import {MatSelectModule} from '@angular/material/select';
 import { FormsModule } from '@angular/forms';
+import { CardTwoComponent } from './card-two/card-two.component';
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
-    CardComponent
+    CardComponent,
+    CardTwoComponent
   ],
   imports: [
     BrowserModule,
