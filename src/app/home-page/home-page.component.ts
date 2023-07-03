@@ -43,4 +43,30 @@ export class HomePageComponent {
     {value: 'panjabi-4', viewValue: 'PANJABI'},
     {value: 'telugu-5', viewValue: 'TELUGU'},
   ];
+
+  currentSlide: any
+
+  sendData(data: any) {
+    this.slide = data;
+  }
+
+
+  slide = [
+
+    { src: 'assets/Filmy_Pass.jpg'},
+
+    { src: 'assets/Adipurush.jpg'},
+    
+    { src: 'assets/No_Hard.jpg'},
+
+    { src: 'assets/sl1.jpg'},
+
+    { src: 'assets/sl2.jpg'},
+
+    { src: 'assets/sl3.jpg'},
+
+    { src: 'assets/sl4.jpg'},
+
+    { src: 'assets/sl5.jpg'}
+  ]
 }
