@@ -16,8 +16,12 @@ export class DataSupplyService {
 
   constructor() { }
   
-  sendData(data: any) {
-    this.currentMovie = data;
+  sendMovieData() {
+     this.currentMovie = this.currentMovie.filter(movie => movie.id === 1);
+    return this.currentMovie;
+  }
+  sendMovieData1() {
+    return this.upcomingMovie;
   }
 
   currentMovie = [

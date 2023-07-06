@@ -12,10 +12,7 @@ export class CardComponent {
 
   constructor(private dp: DataSupplyService) { }
     
-  getData(data:any){
-    this.dp.sendData(data)
-    {
-      this.allMovie = data;
-    }
+  ngOnInit() {
+    this.allMovie = this.dp.sendMovieData();
   }
 }
