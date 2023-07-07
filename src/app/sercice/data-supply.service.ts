@@ -8,13 +8,6 @@ export class DataSupplyService {
     currentMovie1:any;
   constructor() { }
   
-  sendMovieData() {
-     this.currentMovie1 = this.currentMovie.filter(movie => movie.id === 'all-0');
-    return this.currentMovie1;
-  }
-  sendMovieData1() {
-    return this.upcomingMovie;
-  }
 
   currentMovie = [
 
@@ -70,7 +63,15 @@ export class DataSupplyService {
     { src: 'assets/n8.jpg', movieName: 'O SAATHIYA', type: 'TELUGU | COMEDY' , date: 'Releasing on Fri Jul 07' },
   ]
 
-  genarateDinamicData(id:any){
-    this.currentMovie1 = this.currentMovie.filter(movie => movie.id === id);
-  }
+    sendMovieData() {
+    this.currentMovie1 = this.currentMovie.filter(movie => movie.id === 'all-0');
+   return this.currentMovie1;
+ }
+ sendMovieData1() {
+   return this.upcomingMovie;
+ }
+
+ genarateDinamicData(id:any){
+  this.currentMovie1 = this.currentMovie.filter(movie => movie.id === id);
+}
 }
