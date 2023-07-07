@@ -95,9 +95,12 @@
     <h1>NOW SHOWING</h1>
   </div>
   <div class="dp">
+    {{selectedGenre}}
     <mat-form-field class="dropdown1">
+
       <mat-label>GENRE</mat-label>
-      <mat-select [(ngModel)]="selectedGenre" name="genre">
+      
+      <mat-select (selectionChange)="someMethod($event.value)" [(ngModel)]="selectedGenre" name="genre">
         <mat-option *ngFor="let genre of genres" [value]="genre.value">
           {{ genre.viewValue }}
         </mat-option>

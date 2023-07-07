@@ -13,12 +13,12 @@ export class DataSupplyService {
     // 5 - Romantic
 
 
-
+    currentMovie1:any;
   constructor() { }
   
   sendMovieData() {
-     this.currentMovie = this.currentMovie.filter(movie => movie.id === 1);
-    return this.currentMovie;
+     this.currentMovie1 = this.currentMovie.filter(movie => movie.id === 1);
+    return this.currentMovie1;
   }
   sendMovieData1() {
     return this.upcomingMovie;
@@ -26,12 +26,12 @@ export class DataSupplyService {
 
   currentMovie = [
 
-    { src: 'assets/img1.jpg', movieName: 'Satyaprem Ki Katha', type: 'HINDI | (U/A) | DRAMA', id:1 },
+    { src: 'assets/img1.jpg', movieName: 'Satyaprem Ki Katha', type: 'HINDI | (U/A) | DRAMA', id:'all-0'},
 
 
-    { src: 'assets/img2.jpg', movieName: 'Carry on Jatta 3', type: 'PUNJABI | (U/A) | DRAMA', id:1 },
+    { src: 'assets/img2.jpg', movieName: 'Carry on Jatta 3', type: 'PUNJABI | (U/A) | DRAMA', id:'action-1' },
 
-    { src: 'assets/img3.jpg', movieName: 'INDIANA JONES PART 4', type: 'ENGLISH | HINDI | (U/A) | ACTION', id:2 },
+    { src: 'assets/img3.jpg', movieName: 'INDIANA JONES PART 4', type: 'ENGLISH | HINDI | (U/A) | ACTION', id:'animation-2' },
 
 
     { src: 'assets/img4.jpg', movieName: 'ADIPURUSH ', type: 'HINDI | (U) | ACTION', id:2 },
@@ -77,4 +77,8 @@ export class DataSupplyService {
 
     { src: 'assets/n8.jpg', movieName: 'O SAATHIYA', type: 'TELUGU | COMEDY' , date: 'Releasing on Fri Jul 07' },
   ]
+
+  genarateDinamicData(id:any){
+    this.currentMovie1 = this.currentMovie.filter(movie => movie.id === id);
+  }
 }

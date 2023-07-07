@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DataSupplyService } from '../sercice/data-supply.service';
 interface Genre {
   value: string;
   viewValue: string;
@@ -20,6 +21,7 @@ export class HomePageComponent {
   selectedLanguage : any;
   selectedFormat : any;
   selectedGenre : any;
+  constructor(private movieService : DataSupplyService){}
   genres: Genre[] = [
     {value: 'all-0', viewValue: 'ALL GENRES'},
     {value: 'action-1', viewValue: 'ACTION'},
@@ -69,4 +71,12 @@ export class HomePageComponent {
 
     { src: 'assets/sl5.jpg'}
   ]
+
+  someMethod(id:any){
+    // this.movieService.genarateDinamicData(id);
+    // console.log(id);
+    console.log(this.selectedGenre,"Varable come");
+    
+    
+  }
 }
