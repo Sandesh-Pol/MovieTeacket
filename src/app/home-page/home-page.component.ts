@@ -73,10 +73,6 @@ export class HomePageComponent {
   ]
 
   someMethod(id:any){
-    // this.movieService.genarateDinamicData(id);
-    // console.log(id);
-    console.log(this.selectedGenre,"Varable come");
-    
-    
+    this.movieService.genarateDinamicData(this.selectedGenre);
   }
 }

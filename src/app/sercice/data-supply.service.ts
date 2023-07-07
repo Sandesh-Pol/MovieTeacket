@@ -5,19 +5,11 @@ import { Injectable } from '@angular/core';
 })
 export class DataSupplyService {
  
-
-    // 1 - Darama
-    // 2 - Action
-    // 3 - Romantic
-    // 4 - Horror
-    // 5 - Romantic
-
-
     currentMovie1:any;
   constructor() { }
   
   sendMovieData() {
-     this.currentMovie1 = this.currentMovie.filter(movie => movie.id === 1);
+     this.currentMovie1 = this.currentMovie.filter(movie => movie.id === 'all-0');
     return this.currentMovie1;
   }
   sendMovieData1() {
@@ -26,27 +18,27 @@ export class DataSupplyService {
 
   currentMovie = [
 
-    { src: 'assets/img1.jpg', movieName: 'Satyaprem Ki Katha', type: 'HINDI | (U/A) | DRAMA', id:'all-0'},
+    { src: 'assets/img1.jpg', movieName: 'Satyaprem Ki Katha', type: 'HINDI | (U/A) | DRAMA', id:'drama-4'},
 
 
-    { src: 'assets/img2.jpg', movieName: 'Carry on Jatta 3', type: 'PUNJABI | (U/A) | DRAMA', id:'action-1' },
+    { src: 'assets/img2.jpg', movieName: 'Carry on Jatta 3', type: 'PUNJABI | (U/A) | DRAMA', id:'drama-4' },
 
-    { src: 'assets/img3.jpg', movieName: 'INDIANA JONES PART 4', type: 'ENGLISH | HINDI | (U/A) | ACTION', id:'animation-2' },
+    { src: 'assets/img3.jpg', movieName: 'INDIANA JONES PART 4', type: 'ENGLISH | HINDI | (U/A) | ACTION', id:'action-1' },
 
 
-    { src: 'assets/img4.jpg', movieName: 'ADIPURUSH ', type: 'HINDI | (U) | ACTION', id:2 },
+    { src: 'assets/img4.jpg', movieName: 'ADIPURUSH ', type: 'HINDI | (U) | ACTION', id:'action-1' },
 
     {
       src: 'assets/img5.jpg', movieName: 'ZARA HATKE ZARA BACHKE', type: 'HINDI | (U/A) | ROMANCE'
-   , id:3 },
+   , id:'romance-6' },
 
-    { src: 'assets/img6.jpg', movieName: 'THE FLASH', type: 'ENGLISH | HINDI | (U/A) | ACTION', id:2 },
+    { src: 'assets/img6.jpg', movieName: 'THE FLASH', type: 'ENGLISH | HINDI | (U/A) | ACTION', id:'action-1' },
 
     {
       src: 'assets/img7.jpg', movieName: '1920 HORRORS', type: 'HINDI | (A) | HORROR'
-   , id:4 },
+   , id:'horror-5' },
 
-    { src: 'assets/img8.jpg', movieName: 'ELEMENTAL', type: 'ENGLISH | HINDI | (U/A) | ANIMATION', id:5 },
+    { src: 'assets/img8.jpg', movieName: 'ELEMENTAL', type: 'ENGLISH | HINDI | (U/A) | ANIMATION', id:'animation-2' },
   ]
 
   sendData1(data: any) {
