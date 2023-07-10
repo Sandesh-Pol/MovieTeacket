@@ -72,7 +72,14 @@ export class DataSupplyService {
  }
 
  genarateDinamicData(id:any){
-  
-  this.currentMovie1 = this.currentMovie.filter(movie => movie.id === id);
+  if(id=='all-0')
+  {
+    this.currentMovie1 = this.currentMovie.filter(movie => movie.idAll === id);
+  }
+  else
+  {
+    this.currentMovie1 = this.currentMovie.filter(movie => movie.id === id);
+  }
+ 
 }
 }
