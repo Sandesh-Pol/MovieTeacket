@@ -9,12 +9,14 @@ import { CardComponent } from './card/card.component';
 import {MatSelectModule} from '@angular/material/select';
 import { FormsModule } from '@angular/forms';
 import { CardTwoComponent } from './card-two/card-two.component';
+import { BookNowComponent } from './book-now/book-now.component';
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
     CardComponent,
-    CardTwoComponent
+    CardTwoComponent,
+    BookNowComponent
   ],
   imports: [
     BrowserModule,
