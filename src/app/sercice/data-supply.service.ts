@@ -6,32 +6,31 @@ import { Injectable } from '@angular/core';
 export class DataSupplyService {
  
     currentMovie1:any;
+    currentMovie2:any;
   constructor() { }
   
 
   currentMovie = [
 
-    { src: 'assets/img1.jpg', movieName: 'Satyaprem Ki Katha', type: 'HINDI | (U/A) | DRAMA', id:'drama-4', idAll: 'all-0' },
+    { src: 'assets/img1.jpg', movieName: 'Satyaprem Ki Katha', type: 'HINDI | (U/A) | DRAMA', id:'drama-4', idAll: 'all-0' ,format: '2d-2', language:'hindi-2' },
 
 
-    { src: 'assets/img2.jpg', movieName: 'Carry on Jatta 3', type: 'PUNJABI | (U/A) | DRAMA', id:'drama-4', idAll: 'all-0' },
+    { src: 'assets/img2.jpg', movieName: 'Carry on Jatta 3', type: 'PUNJABI | (U/A) | DRAMA', id:'drama-4', idAll: 'all-0' ,format: '2d-2', language:'panjabi-4' },
 
-    { src: 'assets/img3.jpg', movieName: 'INDIANA JONES PART 4', type: 'ENGLISH | HINDI | (U/A) | ACTION', id:'action-1', idAll: 'all-0' },
+    { src: 'assets/img3.jpg', movieName: 'INDIANA JONES PART 4', type: 'ENGLISH | HINDI | (U/A) | ACTION', id:'action-1', idAll: 'all-0' ,format: '3d-3', language:'english-1' },
 
 
-    { src: 'assets/img4.jpg', movieName: 'ADIPURUSH ', type: 'HINDI | (U) | ACTION', id:'action-1', idAll: 'all-0' },
-
-    {
-      src: 'assets/img5.jpg', movieName: 'ZARA HATKE ZARA BACHKE', type: 'HINDI | (U/A) | ROMANCE'
-   , id:'romance-6', idAll: 'all-0' },
-
-    { src: 'assets/img6.jpg', movieName: 'THE FLASH', type: 'ENGLISH | HINDI | (U/A) | ACTION', id:'action-1', idAll: 'all-0' },
+    { src: 'assets/img4.jpg', movieName: 'ADIPURUSH ', type: 'HINDI | (U) | ACTION', id:'action-1', idAll: 'all-0' ,format: '3d-3', language:'hindi-2' },
 
     {
-      src: 'assets/img7.jpg', movieName: '1920 HORRORS', type: 'HINDI | (A) | HORROR'
-   , id:'horror-5', idAll: 'all-0' },
+      src: 'assets/img5.jpg', movieName: 'ZARA HATKE ZARA BACHKE', type: 'HINDI | (U/A) | ROMANCE', id:'romance-6', idAll: 'all-0' ,format: '2d-2', language:'hindi-2' },
 
-    { src: 'assets/img8.jpg', movieName: 'ELEMENTAL', type: 'ENGLISH | HINDI | (U/A) | ANIMATION', id:'animation-2', idAll: 'all-0' },
+    { src: 'assets/img6.jpg', movieName: 'THE FLASH', type: 'ENGLISH | HINDI | (U/A) | ACTION', id:'action-1', idAll: 'all-0' ,format: '3d-3', language:'hindi-2' },
+
+    {
+      src: 'assets/img7.jpg', movieName: '1920 HORRORS', type: 'HINDI | (A) | HORROR', id:'horror-5', idAll: 'all-0' ,format: '2d-2', language:'hindi-2' },
+
+    { src: 'assets/img8.jpg', movieName: 'ELEMENTAL', type: 'ENGLISH | HINDI | (U/A) | ANIMATION', id:'animation-2', idAll: 'all-0' ,format: '3d-3', language:'english-1' },
   ]
 
   sendData1(data: any) {
@@ -71,14 +70,32 @@ export class DataSupplyService {
    return this.upcomingMovie;
  }
 
- genarateDinamicData(id:any){
+ genarateDinamicData1(id:any){
+
   if(id == 'all-0')
   {
     this.currentMovie1 = this.currentMovie.filter(movie => movie.idAll === id);
   }
   else{
     this.currentMovie1 = this.currentMovie.filter(movie => movie.id === id);
+  } 
+}
+ genarateDinamicData2(format:any){
+  if(format == 'all-0')
+  {
+    this.currentMovie1 = this.currentMovie.filter(movie => movie.idAll === format);
   }
-  
+  else{
+    this.currentMovie1 = this.currentMovie.filter(movie => movie.format === format);
+  } 
+}
+genarateDinamicData3(language:any){
+  if(language == 'all-0')
+  {
+    this.currentMovie1 = this.currentMovie.filter(movie => movie.idAll === language);
+  }
+  else{
+    this.currentMovie1 = this.currentMovie.filter(movie => movie.language === language);
+  } 
 }
 }

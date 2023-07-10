@@ -14,8 +14,6 @@ export class CardComponent implements OnInit {
     
   ngOnInit() {
     this.allMovie = this.dp.sendMovieData();
-    console.log();
-    
   }
 
 

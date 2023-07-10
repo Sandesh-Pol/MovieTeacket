@@ -33,7 +33,6 @@ export class HomePageComponent {
   ];
   formats: Format[] = [
     {value: 'all-0', viewValue: 'ALL FORMATS'},
-    {value: 'imax-1', viewValue: 'IMAX'},
     {value: '2d-2', viewValue: '2D'},
     {value: '3d-3', viewValue: '3D'},
   ];
@@ -72,7 +71,13 @@ export class HomePageComponent {
     { src: 'assets/sl5.jpg'}
   ]
 
-  someMethod(id:any){
-    this.movieService.genarateDinamicData(this.selectedGenre);
+  someMethod1(id:any){
+    this.movieService.genarateDinamicData1(this.selectedGenre);
+  }
+  someMethod2(format:any){
+    this.movieService.genarateDinamicData2(this.selectedFormat);
+  }
+  someMethod3(language:any){
+    this.movieService.genarateDinamicData3(this.selectedLanguage);
   }
 }

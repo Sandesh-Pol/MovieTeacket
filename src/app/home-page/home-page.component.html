@@ -99,7 +99,7 @@
 
       <mat-label>GENRE</mat-label>
       
-      <mat-select (selectionChange)="someMethod($event.value)" [(ngModel)]="selectedGenre" name="genre">
+      <mat-select (selectionChange)="someMethod1($event.value)" [(ngModel)]="selectedGenre" name="genre">
         <mat-option *ngFor="let genre of genres" [value]="genre.value">
           {{ genre.viewValue }}
         </mat-option>
@@ -107,7 +107,7 @@
     </mat-form-field>
     <mat-form-field class="dropdown1">
       <mat-label>FORMATE</mat-label>
-      <mat-select [(ngModel)]="selectedFormat" name="food">
+      <mat-select (selectionChange)="someMethod2($event.value)" [(ngModel)]="selectedFormat" name="food">
         <mat-option *ngFor="let format of formats" [value]="format.value">
           {{ format.viewValue }}
         </mat-option>
@@ -115,7 +115,7 @@
     </mat-form-field>
     <mat-form-field class="dropdown1">
       <mat-label>LANGUAGES</mat-label>
-      <mat-select [(ngModel)]="selectedLanguage" name="food">
+      <mat-select (selectionChange)="someMethod3($event.value)" [(ngModel)]="selectedLanguage" name="food">
         <mat-option *ngFor="let language of languages" [value]="language.value">
           {{ language.viewValue }}
         </mat-option>
