@@ -58,7 +58,7 @@ main{
      padding-right: 30px;
     padding-left: 30px;
     background-color: black;
-    height: 550px; 
+    height: fit-content; 
     display: flex;
     flex-wrap: wrap;
     justify-content: start;

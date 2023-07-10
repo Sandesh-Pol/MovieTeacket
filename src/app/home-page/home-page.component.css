@@ -51,6 +51,7 @@
 .dp{
     display: flex;
     column-gap: 50px;
+
 }
 .dropdown1{
     padding: 15px;
@@ -83,7 +84,9 @@
     color: #fff;
     font-size: 25px;
     font-weight: 700;
+    padding:40px 0 30px 5px;
 }
+
 @media screen and (max-width: 800px) {
     .menu{
         display: none;
@@ -102,6 +105,24 @@
     .bgBlack{
         background-color: black;
         height: 9vh;
+    }
+    .dp{
+     display: none;
+    }
+    .sl{
+        margin-top: 11vh;
+    }
+    img{
+        height: 55vh;
+        background: #000;
+    }
+    .hh5 h1{
+        text-align: center;
+        margin-right: 100px;
+    }
+    .part-2 h1{
+       text-align: center;
+       padding-top: 28px;
     }
   }
   
