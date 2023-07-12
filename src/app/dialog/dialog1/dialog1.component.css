@@ -13,3 +13,7 @@
     overflow: hidden;
     text-align: center!important;
 }
+main{
+   background-color: #000;  
+   margin-top: 10%;
+}
