@@ -1,19 +1,2 @@
-.video{
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: 110%;
-    background-color: #000;
-    cursor: pointer;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    width: 100%;
-    z-index: 8;
-    overflow: hidden;
-    text-align: center!important;
-}
-main{
-   background-color: #000;  
-   margin-top: 10%;
-}
+
+
