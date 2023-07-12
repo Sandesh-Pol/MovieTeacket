@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { DataSupplyService } from '../sercice/data-supply.service';
+
 interface Genre {
   value: string;
   viewValue: string;
@@ -80,4 +81,6 @@ export class HomePageComponent {
   someMethod3(language:any){
     this.movieService.genarateDinamicData3(this.selectedLanguage);
   }
+
+
 }

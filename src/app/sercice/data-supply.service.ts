@@ -98,4 +98,5 @@ genarateDinamicData3(language:any){
     this.currentMovie1 = this.currentMovie.filter(movie => movie.language === language);
   } 
 }
+
 }
