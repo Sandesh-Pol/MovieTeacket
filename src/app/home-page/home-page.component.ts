@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { DataSupplyService } from '../sercice/data-supply.service';
-
+import { Router } from '@angular/router';
 interface Genre {
   value: string;
   viewValue: string;
@@ -22,7 +22,7 @@ export class HomePageComponent {
   selectedLanguage : any;
   selectedFormat : any;
   selectedGenre : any;
-  constructor(private movieService : DataSupplyService){}
+  constructor(private movieService : DataSupplyService,private router: Router) { }
   genres: Genre[] = [
     {value: 'all-0', viewValue: 'ALL GENRES'},
     {value: 'action-1', viewValue: 'ACTION'},

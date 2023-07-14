@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { DataSupplyService } from '../sercice/data-supply.service';
 import { MatDialog } from '@angular/material/dialog';
 import { Dialog1Component } from '../dialog/dialog1/dialog1.component';
+import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html',
@@ -44,7 +46,7 @@ export class CardComponent implements OnInit {
     },
   ]
 
-  constructor(public dp: DataSupplyService, public dialog: MatDialog) { }
+  constructor(public dp: DataSupplyService, public dialog: MatDialog,private router: Router) { }
 
   ngOnInit() {
     this.allMovie = this.dp.sendMovieData();
@@ -54,6 +56,9 @@ export class CardComponent implements OnInit {
     const dialogRef = this.dialog.open(Dialog1Component, {
       data: this.ytData.filter(data => data.id1 === item.id)
     });
+  }
+  navigateToAbout() {
+    this.router.navigate(['/bookTickets']);
   }
   
 }

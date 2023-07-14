@@ -6,7 +6,7 @@
                 <h5 class="card-title">{{item.movieName}}</h5>
                 <p class="card-text">{{item.type}}</p>
                 <div class="book">
-                    <button class="btn btn-light b1">BOOK TICKETS</button>
+                    <button class="btn btn-light b1" (click)="navigateToAbout()">BOOK TICKETS</button>
                     <button class="btn btn-light b1" (click)="openDialog(item.dataId)">PLAY TRAILER</button>
                 </div>
             </div>

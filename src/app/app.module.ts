@@ -13,6 +13,7 @@ import { BookNowComponent } from './book-now/book-now.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import { Dialog1Component } from './dialog/dialog1/dialog1.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +21,7 @@ import { Dialog1Component } from './dialog/dialog1/dialog1.component';
     CardComponent,
     CardTwoComponent,
     BookNowComponent,
-    Dialog1Component
+    Dialog1Component,
   ],
   imports: [
     BrowserModule,
@@ -28,7 +29,7 @@ import { Dialog1Component } from './dialog/dialog1/dialog1.component';
     BrowserAnimationsModule,
     MatSelectModule,
     FormsModule,
-    MatDialogModule
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
