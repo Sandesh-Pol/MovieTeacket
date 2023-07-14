@@ -1,0 +1,8 @@
+.modal-backdrop {
+    background-color: transparent;
+ }
+ .pos-end{
+    position: relative;
+    top: 10%;
+    left: 90%;
+ }

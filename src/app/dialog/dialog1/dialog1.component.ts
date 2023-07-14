@@ -44,6 +44,7 @@ export class Dialog1Component {
     },
   ]
   getYoutubeEmbedUrl(link: string): SafeResourceUrl {
+    
     return this.sanitizer.bypassSecurityTrustResourceUrl(link);
   }
 }
