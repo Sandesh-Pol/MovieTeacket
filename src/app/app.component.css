@@ -1,8 +1,64 @@
-.modal-backdrop {
-    background-color: transparent;
- }
- .pos-end{
-    position: relative;
-    top: 10%;
-    left: 90%;
- }
+#logo-top{
+   height: 50px;
+   width: 80px;
+   margin-top: 5px;
+}
+
+.nev-color {
+   background-color: rgb(27,27,27);
+}
+#search-bar {
+   width: 55vw;
+   margin-left: -6vw;
+   background: rgba(221,221,221,.12);
+   color: #fff;
+   border-radius: 6px!important;
+   padding: 6px 35px 6px 15px;
+   border: none;
+   font-size: .9rem;
+   height: 40px;
+   transition: all .18s ease;
+}
+#Dropdown{
+   margin-right: -11px;
+   margin-left: 45px;
+   width: 18vw;
+   height: 40px;
+   background-color: #383C3F;
+}
+.menu a{
+   font-size: 15px;
+   margin-right: 20px;
+}
+.menu{
+   margin-left: 10vw;
+   margin-top: 10px;
+}
+.menu a:hover{
+   color: rgb(214, 214, 18);
+}
+
+@media screen and (max-width: 800px) {
+   .menu{
+       display: none;
+       background-color: black;
+   }
+   #search-bar{
+       display: none;
+   }
+   #Dropdown{
+       display: none;
+   }
+   #logo-top{
+       height: 40px;
+       width: 70px;
+   }
+   .bgBlack{
+       background-color: black;
+       height: 9vh;
+   }
+   .dp{
+    display: none;
+   }
+
+}
