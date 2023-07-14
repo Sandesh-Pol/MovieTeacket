@@ -17,6 +17,7 @@ export class DataSupplyService {
       idAll: 'all-0',
       format: '2d-2',
       language: 'hindi-2',
+      dataId: 1
     },
 
     {
@@ -27,6 +28,7 @@ export class DataSupplyService {
       idAll: 'all-0',
       format: '2d-2',
       language: 'panjabi-4',
+      dataId: 2
     },
 
     {
@@ -37,6 +39,7 @@ export class DataSupplyService {
       idAll: 'all-0',
       format: '3d-3',
       language: 'english-1',
+      dataId: 3
     },
 
     {
@@ -47,6 +50,7 @@ export class DataSupplyService {
       idAll: 'all-0',
       format: '3d-3',
       language: 'hindi-2',
+      dataId: 4
     },
 
     {
@@ -57,6 +61,7 @@ export class DataSupplyService {
       idAll: 'all-0',
       format: '2d-2',
       language: 'hindi-2',
+      dataId: 5
     },
 
     {
@@ -67,6 +72,7 @@ export class DataSupplyService {
       idAll: 'all-0',
       format: '3d-3',
       language: 'hindi-2',
+      dataId: 6
     },
 
     {
@@ -77,6 +83,7 @@ export class DataSupplyService {
       idAll: 'all-0',
       format: '2d-2',
       language: 'hindi-2',
+      dataId: 7
     },
 
     {
@@ -87,6 +94,7 @@ export class DataSupplyService {
       idAll: 'all-0',
       format: '3d-3',
       language: 'english-1',
+      dataId: 8
     },
   ];
 

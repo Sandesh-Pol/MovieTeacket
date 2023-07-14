@@ -1,8 +1,9 @@
 <br />
 
+
 <div class="embed-responsive embed-responsive-16by9">
-  <iframe
-    *ngFor="let item of ytData"
+  
+  <iframe *ngFor="let item of data"
     width="944"
     height="438"
     [src]="getYoutubeEmbedUrl(item.link)"
@@ -12,3 +13,5 @@
     allowfullscreen
   ></iframe>
 </div>
+
+
