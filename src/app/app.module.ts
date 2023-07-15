@@ -12,8 +12,9 @@ import { CardTwoComponent } from './card-two/card-two.component';
 import { BookNowComponent } from './book-now/book-now.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import { Dialog1Component } from './dialog/dialog1/dialog1.component';
-
-
+import {MatCardModule} from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,6 +31,9 @@ import { Dialog1Component } from './dialog/dialog1/dialog1.component';
     MatSelectModule,
     FormsModule,
     MatDialogModule,
+    MatCardModule,
+    MatButtonModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

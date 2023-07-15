@@ -1,3 +1,154 @@
-.main{
-   margin-top: 100px;
+.main {
+  margin-top: 100px;
+  background-image: linear-gradient(
+      90deg,
+      rgb(26, 26, 26) 24.97%,
+      rgb(26, 26, 26) 38.3%,
+      rgba(26, 26, 26, 0.04) 97.47%,
+      rgb(26, 26, 26) 100%
+    ),
+    url(src/assets/nw1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 75vh;
+  display: flex;
+}
+
+.header h1 {
+  color: rgb(255, 255, 255);
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 42px;
+  margin: 65px 0px 0px 74px;
+}
+.poster {
+  height: 392px;
+  width: 261px;
+  padding-top: 30px;
+  padding-left: 50px;
+}
+.poster img {
+  height: 385px;
+  width: 260px;
+  border-radius: 10px;
+  border-radius: 10px;
+}
+.c1 {
+  border-radius: 8px;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  display: flex;
+  padding: 12px 24px;
+  margin: 15px -22px 2px 72px;
+  max-width: 446px;
+  cursor: pointer;
+  background-color: rgb(51, 51, 51);
+  height: 75px;
+  width: 420px;
+}
+.marLeft {
+  margin-left: 70px;
+}
+.c1 {
+  color: white;
+  font-size: 1.2rem;
+}
+.BU1 {
+  margin-top: 30px;
+  width: 19vw;
+  height: 7vh;
+  font-size: 1.2rem;
+}
+
+.star img {
+  height: 30px;
+  width: 30px;
+  margin-left: 70px;
+  margin-top: 20px;
+}
+.star h2 {
+  margin-left: 10px;
+  margin-top: 20px;
+  color: white;
+}
+.shr img {
+  height: 30px;
+  width: 30px;
+}
+.cl1 {
+  font-size: 12px;
+  margin-top: 2px;
+  color: white;
+  margin-left: 10px;
+}
+.shr img {
+  height: 40px;
+  width: 40px;
+  margin: 21px 0px 0px 39vw;
+}
+.about h1 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  color: rgb(0, 0, 0);
+  margin-top: 20px;
+}
+.about p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: rgb(51, 51, 51);
+  padding-top: 16px;
+}
+.cast {
+  display: flex;
+  column-gap: 30px;
+  flex-wrap: nowrap;
+  margin-left: 70px;
+}
+.cast img {
+  border-radius: 50%;
+  height: 130px;
+  width: 130px;
+}
+.cast p {
+  color: rgb(0, 0, 0);
+  padding-top: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+.cast p span {
+  color: rgb(102, 102, 102);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+.shr1 img {
+  height: 25px;
+  width: 25px;
+  margin-right: 10px;
+}
+
+.marLef {
+  margin-left: 35vw;
+}
+.example-card {
+  width: 45vw;
+}
+
+.star1 img{
+  width: 25px;
+  height: 25px;
+  margin-left: 20vw;
+}
+.star1{
+ display: flex;
+ justify-content: end;
 }
