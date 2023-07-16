@@ -15,6 +15,7 @@ import { Dialog1Component } from './dialog/dialog1/dialog1.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
+import { FinalBookComponent } from './final-book/final-book.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,6 +24,7 @@ import {MatIconModule} from '@angular/material/icon';
     CardTwoComponent,
     BookNowComponent,
     Dialog1Component,
+    FinalBookComponent,
   ],
   imports: [
     BrowserModule,

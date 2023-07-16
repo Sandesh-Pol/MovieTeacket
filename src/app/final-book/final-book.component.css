@@ -1,0 +1,14 @@
+.header{
+    background-color: rgb(27,27,27);
+    height: 20vh;
+    width: 100%;
+    margin-top: 102px;
+    position: absolute;
+}
+.header p{
+    color: white;
+    font-size: 36px;
+    font-weight: 500;
+    padding-top: 50px;
+    padding-left: 20px  ;
+}
